@@ -1,5 +1,5 @@
 package Webstaurantstore.Tests;
-import Webstaurantstore.Pages.CartPage;
+import Webstaurantstore.Pages.Pages.CartPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

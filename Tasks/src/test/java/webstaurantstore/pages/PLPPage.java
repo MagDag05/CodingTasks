@@ -1,4 +1,4 @@
-package Webstaurantstore.Pages;
+package Webstaurantstore.Pages.Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
-public class PLPPage extends BasePage{
+public class PLPPage extends BasePage {
 
     @FindBy (id = "searchval")
     private static WebElement navigateSearchField;

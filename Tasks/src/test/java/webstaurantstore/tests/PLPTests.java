@@ -1,6 +1,6 @@
 package Webstaurantstore.Tests;
 
-import Webstaurantstore.Pages.PLPPage;
+import Webstaurantstore.Pages.Pages.PLPPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
