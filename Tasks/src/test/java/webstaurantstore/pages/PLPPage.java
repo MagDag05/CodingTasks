@@ -1,5 +1,4 @@
-package Webstaurantstore.Pages.Pages;
-
+package webstaurantstore.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,13 +8,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class PLPPage extends BasePage {
 
     @FindBy (id = "searchval")
-    private static WebElement navigateSearchField;
+    private WebElement navigateSearchField;
 
     @FindBy (css = "[value='Search']")
-    private static WebElement searchButton;
+    private WebElement searchButton;
 
     @FindBy (css = "[itemprop='Name']")
-    private static WebElement resultOfSearch;
+    private WebElement resultOfSearch;
 
 
 
@@ -23,13 +22,13 @@ public class PLPPage extends BasePage {
         super(driver);
     }
 
-    public static void searchField() {  wait.until(ExpectedConditions.elementToBeClickable(navigateSearchField)); }
+    public void searchField() { WebElement searchField = wait.until(ExpectedConditions.elementToBeClickable(navigateSearchField));}
 
-    public static void searchForItem() {wait.until(ExpectedConditions.visibilityOf(navigateSearchField)).sendKeys("825CI25MS");  }
+    public void searchForItem() {wait.until(ExpectedConditions.visibilityOf(navigateSearchField)).sendKeys("825CI25MS");  }
 
-    public static void clickOnSearchButton() { wait.until(ExpectedConditions.elementToBeClickable(searchButton)).click();    }
+    public void clickOnSearchButton() { wait.until(ExpectedConditions.elementToBeClickable(searchButton)).click();    }
 
-    public static String verifySearchResult() {
+    public String verifySearchResult() {
        String item = (resultOfSearch).getText();
        return item;        }
 
